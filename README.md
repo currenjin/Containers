@@ -8,8 +8,33 @@
 
 <br>
 
-## [유용한 강좌 링크]
+## [자주쓰고 유용한 명령어]
 
+NGINX POD 만들기<br>
+`kubectl run --generator=run-pod/v1 nginx --image=nginx`
+<br>
+
+POD Manifast YAML 파일을 생성합니다(-o yaml). Don't create it(--dry-run)<br>
+`kubectl run --generator=run-pod/v1 nginx --image=nginx --dry-run -o yaml`
+<br>
+
+Deployment 만들기<br>
+`kubectl create deployment --image=nginx nginx`
+<br>
+
+Deployment YAML 파일을 생성합니다(-o yaml). Don't create it(--dry-run)<br>
+`kubectl create deployment --image=nginx nginx --dry-run -o yaml`
+<br>
+
+Deployment YAML 파일을 생성합니다(-o yaml). 4개의 레플리카(--replicas=4). Don't create it(-dry-run)<br>
+`kubectl create deployment --image=nginx nginx --dry-run -o yaml > nginx-deployment.yaml`
+
+<br>
+
+## [유용한 설명 링크]
+
+[kubectl Usage Converntions](https://kubernetes.io/docs/reference/kubectl/conventions/)
+<br>
 1. [AWS에서 kubeadm로 클라우드 프로바이더를 설정해 쿠버네티스 설치하기](https://blog.naver.com/alice_k106/221696987140)
 2. [kops 설치 시, IAM 역할 및 사용자 생성하기](https://blog.naver.com/alice_k106/221342005691)
 3. [쿠버네티스 컴포넌트의 실행 옵션 변경하기](https://blog.naver.com/alice_k106/221737477464)
@@ -19,3 +44,5 @@
 7. [CPU Affinity를 위해 CPU Manager 사용하기](https://blog.naver.com/alice_k106/221633530545)
 8. [애드미션 컨트롤러를 직접 구현해보기](https://blog.naver.com/alice_k106/221546328906)
 9. [커스텀 리소스의 제어를 위한 Operator 직접 구현해보기](https://blog.naver.com/alice_k106/221586279079)
+
+<br>
