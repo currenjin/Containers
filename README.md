@@ -1,6 +1,6 @@
 # Kubernetes 정리하는 공간!
 
-### [Certified Kubernetes Administrator](./ceritifed_kubernetes_administrator)
+### [Certified Kubernetes Administrator](./certified_kubernetes_administrator)
 
 ### [시작하세요! 도커&쿠버네티스](./start-docker-kubernetes)
 

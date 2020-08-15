@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: pod
+metadata:
+  naem: redis
+
+spec:
+  containers:
+    - name: redis-container
+      image: redis
