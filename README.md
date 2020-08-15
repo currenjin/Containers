@@ -12,29 +12,30 @@
 
 NGINX POD 만들기<br>
 `kubectl run --generator=run-pod/v1 nginx --image=nginx`
-<br>
+<br><br>
 
-POD Manifast YAML 파일을 생성합니다(-o yaml). Don't create it(--dry-run)<br>
+Generate POD Manifast YAML file(-o yaml). Don't create it(--dry-run)<br>
 `kubectl run --generator=run-pod/v1 nginx --image=nginx --dry-run -o yaml`
-<br>
+<br><br>
 
-Deployment 만들기<br>
+Create a Deployment<br>
 `kubectl create deployment --image=nginx nginx`
-<br>
+<br><br>
 
-Deployment YAML 파일을 생성합니다(-o yaml). Don't create it(--dry-run)<br>
+Generate Deployment YAML file(-o yaml). Don't create it(--dry-run)<br>
 `kubectl create deployment --image=nginx nginx --dry-run -o yaml`
-<br>
+<br><br>
 
-Deployment YAML 파일을 생성합니다(-o yaml). 4개의 레플리카(--replicas=4). Don't create it(-dry-run)<br>
+Generate Deployment YAML file(-o yaml). Don't create it(--dry-run) with 4 Replicas (--replicas=4)<br>
 `kubectl create deployment --image=nginx nginx --dry-run -o yaml > nginx-deployment.yaml`
-
-<br>
+<br><br>
 
 ## [유용한 설명 링크]
 
-[kubectl Usage Converntions](https://kubernetes.io/docs/reference/kubectl/conventions/)
+### [kubectl Usage Converntions](https://kubernetes.io/docs/reference/kubectl/conventions/)
 <br>
+
+
 1. [AWS에서 kubeadm로 클라우드 프로바이더를 설정해 쿠버네티스 설치하기](https://blog.naver.com/alice_k106/221696987140)
 2. [kops 설치 시, IAM 역할 및 사용자 생성하기](https://blog.naver.com/alice_k106/221342005691)
 3. [쿠버네티스 컴포넌트의 실행 옵션 변경하기](https://blog.naver.com/alice_k106/221737477464)
