@@ -9,7 +9,7 @@ spec:
   template:
     metadata:
       name: myapp-pod
-      lables:
+      labels:
         app: myapp
         type: front-end
     spec:
