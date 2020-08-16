@@ -10,7 +10,7 @@
 
 ## [자주쓰고 유용한 명령어]
 
-NGINX POD 만들기<br>
+Create a POD<br>
 `kubectl run --generator=run-pod/v1 nginx --image=nginx`
 <br><br>
 
