@@ -34,7 +34,5 @@ Udemy CKA강좌를 수강하는 사람에 한해서 사용이 가능합니다.
 - [NodePort](./nodeportservice-definition.yml)
 - [ClusterIP](./clusteripservice-definition.yml)
 
-<br>
-
 ## Scheduling
 
