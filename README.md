@@ -36,18 +36,14 @@ Generate Deployment YAML file(-o yaml). Don't create it(--dry-run) with 4 Replic
 
 Create a Service named redis-service of type ClusterIP to expose pod redis on port 6379<br>
 `kubectl expose pod redis --port=6379 --name redis-service --dry-run=client -o yaml`
-
 <br>or<br>
-
-`kubectl create service clusterip redis --tcp=6379:6379 --dry-run=client -o yaml
+`kubectl create service clusterip redis --tcp=6379:6379 --dry-run=client -o yaml`
 <br><br>
 
 Create a Service named nginx of type NodePort to expose pod nginx's port 80 on port 30080 on the nodes<br>
-`kubectl expose pod nginx --port=80 --name nginx-service --type=NodePort --dry-run=client -o yaml
-
+`kubectl expose pod nginx --port=80 --name nginx-service --type=NodePort --dry-run=client -o yaml`
 <br>or<br>
-
-`kubectl create service nodeport nginx --tcp=80:80 --node-port=30080 --dry-run=client -o yaml
+`kubectl create service nodeport nginx --tcp=80:80 --node-port=30080 --dry-run=client -o yaml`
 <br><br>
 
 위 명령에서 발생하는 이슈 중 하나는 Selector를 받아들일 수 없고, 다른 하나는 Node Port를 받아들일 수 없습니다. 혹시 필요하다면 미리 지정하는 것이 좋아요!
